@@ -19,6 +19,7 @@ async function enhanceTopic(topic, courseDescription) {
         const response = await result.response;
         return response.text();  // Enhanced topic
     } catch (error) {
+        
         console.error("❌ Error enhancing topic:", error);
         throw error;
     }
